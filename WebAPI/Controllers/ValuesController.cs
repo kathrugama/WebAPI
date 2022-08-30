@@ -4,36 +4,41 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebAPI.Datos;
+using WebAPI.Models;
 
 namespace WebAPI.Controllers
 {
-    public class ValuesController : ApiController
+    public class PCController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+        // GET api/<controller>
+        public List<DetallesCompu> Get()
         {
-            return new string[] { "value1", "value2" };
+            return DetallePC.Mostrar();
         }
 
-        // GET api/values/5
-        public string Get(int id)
+        // GET api/<controller>/5
+        public DetallesCompu Get(int id)
         {
-            return "value";
+            return DetallePC.Buscar(id);
         }
 
-        // POST api/values
-        public void Post([FromBody] string value)
+        // POST api/<controller>
+        public bool Post([FromBody] DetallesCompu detallesCompu)
         {
+            return DetallePC.Insertar(detallesCompu);
         }
 
-        // PUT api/values/5
-        public void Put(int id, [FromBody] string value)
+        // PUT api/<controller>/5
+        public bool Put([FromBody] DetallesCompu detallesCompu)
         {
+            return DetallePC.Editar(detallesCompu);
         }
 
-        // DELETE api/values/5
-        public void Delete(int id)
+        // DELETE api/<controller>/5
+        public bool Delete(int id)
         {
+            return DetallePC.Eliminar(id);
         }
     }
 }

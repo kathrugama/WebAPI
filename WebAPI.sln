@@ -5,7 +5,10 @@ VisualStudioVersion = 16.0.32802.440
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{40A23D40-6CB3-4A89-A927-8C67BF5503C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{07503E0A-3BB3-40FC-B4E4-9D5EA0DEB700}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8805E632-F963-4EE6-A4FB-855117352AE5}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +20,6 @@ Global
 		{40A23D40-6CB3-4A89-A927-8C67BF5503C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40A23D40-6CB3-4A89-A927-8C67BF5503C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40A23D40-6CB3-4A89-A927-8C67BF5503C4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{07503E0A-3BB3-40FC-B4E4-9D5EA0DEB700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07503E0A-3BB3-40FC-B4E4-9D5EA0DEB700}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07503E0A-3BB3-40FC-B4E4-9D5EA0DEB700}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07503E0A-3BB3-40FC-B4E4-9D5EA0DEB700}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
